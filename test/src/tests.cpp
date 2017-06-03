@@ -1,5 +1,7 @@
 #define CATCH_CONFIG_MAIN 
 #include "catch.hpp"
+#define __glogger_implementation__
+#include "glogger.hpp"
 
 unsigned int Factorial( unsigned int number ) 
 {

@@ -35,5 +35,6 @@ template:
 
 * Comment all code with doxygen 
 * Write instruction on how to contribute
-* Create CMake
+* travis
+* package-managers
 
