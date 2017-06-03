@@ -332,8 +332,8 @@ min_level_console_(Level::Info)
 , skip_empty_msgs_(false)
 , trim_messages_(false)
 , max_log_file_size_(2000000) // 2 Mb
-, record_enabled_(false)
 , separator_(": ")
+, record_enabled_(false)
 { }
 
 void GLogger::write_log_message(Level level, std::string& message)

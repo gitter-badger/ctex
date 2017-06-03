@@ -26,6 +26,7 @@ int main(int argc, char* argv[])
 		exit(1);
 	}
     
+    // read from cmd or config file
     GLogger::instance().set_output_mode(GLogger::Output::Both);
     GLogger::instance().set_min_level(GLogger::Output::Console, GLogger::Level::Info);
     GLogger::instance().set_min_level(GLogger::Output::File, GLogger::Level::Trace);

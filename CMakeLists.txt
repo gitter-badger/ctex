@@ -19,3 +19,6 @@ set_target_properties(ctex PROPERTIES ENABLE_EXPORTS on)
 target_link_libraries(catch_tests PUBLIC
     ctex
 )
+
+# Instal
+install(TARGETS ctex DESTINATION bin)

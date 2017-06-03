@@ -2,7 +2,7 @@
  * @file ltree.hpp
  * @date 03.06.17
  * @author galarius
- * @copyright   Copyright © 2017 galarius. All rights reserved.
+ * @copyright Copyright © 2017 galarius. All rights reserved.
  * @brief Lexeme Tree
  */
 
@@ -10,6 +10,7 @@
 #define ltree_hpp
 
 #include "lexeme.hpp"
+
 #include <iostream>
 #include <set>
 
@@ -17,7 +18,8 @@
  * @brief Lexeme Tree
  *
  * Lexeme tree build algorithm:
- *  I) Partial tree contains only lexemes considered to be transform operators, like functions, operations...
+ *  I) Partial tree contains only lexemes considered to be transform operators, like functions, 
+ *     operations (see LexemeLibrary::is_toperator)...
  *  II) Tree extension by using only lexeme positions relatively to transform operators in tree
  */
 class LexemeTree
@@ -59,12 +61,11 @@ public:
      * @see Lexeme
      */
     void insert(const Lexeme& lexeme);
-    
     /**
-     @brief Save bracket position
+     @brief Save parenthesis position
      @param lexeme bracket
      */
-    void save_bracket_pos(const Lexeme& lexeme);
+    void save_parenthesis_pos(const Lexeme& lexeme);
     /**
      * @brief Display tree
      * @return tree structure in std::string

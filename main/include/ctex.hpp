@@ -21,11 +21,14 @@
 class CTex
 {
 public:
+    /**
+     * Tag styles
+     */
     enum EQUATION_TAG_STYLE
     {
-        DISPLAY,
-        INLINE,
-        DOXYFILE
+        DISPLAY,    ///< $$
+        INLINE,     ///< $
+        DOXYFILE    ///< /f$
     };
 public:
     /**
@@ -52,15 +55,17 @@ public:
     
 public:
     /**
-     * @brief Default regex, that contains c maths function library
+     * @brief Default regex, that contains C maths function library
      */
     static std::vector<std::pair<std::string, std::string>> default_regex();
     /**
      * @brief Convert C formula to LaTeX
      * @param[in] in text, that contains formula
+     * @param[in] style tag style
      * @return converted formula
+     * @see EQUATION_TAG_STYLE
      */
-    std::string translate(const std::string& in, EQUATION_TAG_STYLE style = DISPLAY);
+    std::string translate(const std::string& in, EQUATION_TAG_STYLE style = DOXYFILE);
     /**
      * @brief Get hit count for specified group
      */
@@ -84,7 +89,17 @@ private:
      * @return tokens
      */
     std::vector<std::string> lexical_analyzer(const std::string& in);
+    /**
+     * Open tag for LaTeX math equation
+     * @param style tag style
+     * @return tag in specified style
+     */
     std::string eq_open_tag(EQUATION_TAG_STYLE style);
+    /**
+     * Close tag for LaTeX math equation
+     * @param style tag style
+     * @return tag in specified style
+     */
     std::string eq_close_tag(EQUATION_TAG_STYLE style);
 private:
     std::string regex_txt_; ///< @brief full regex expression as string

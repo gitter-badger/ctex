@@ -3,7 +3,7 @@
  * @date 03.06.17
  * @author galarius
  * @copyright   Copyright © 2017 galarius. All rights reserved.
- * @brief Lexeme description
+ * @brief Lexeme description and library
  */
 
 #ifndef lexeme_hpp
@@ -27,9 +27,9 @@ public:
      */
     enum Type {
         ///@{
-        bracketl,
-        bracketr,
-        index,
+        bracketl,   ///< (
+        bracketr,   ///< )
+        index,      ///< []
         function,
         operation,
         variable,
@@ -60,9 +60,10 @@ public:
     static std::vector<std::string> get_lexemes(Type type);
     /**
      * @brief Apply transformation
-     * @param toperator transform operator from the list of supported
-     * @param a expression Р°
-     * @param b expression Р±
+     * @param[in] toperator transform operator from the list of supported
+     * @param[in] a expression 1
+     * @param[in] b expression 2
+     * @param[in] in_parenthesis whether result should be should be wrapped in parenthesis
      * @return transformation result
      */
     static std::string apply_transform(const Lexeme& toperator, const std::string& a, const std::string& b, bool in_parenthesis = false);
@@ -109,7 +110,7 @@ private:
      */
     static std::vector<LexData> lex_library;
     /**
-     * @brief LaTeX tags
+     * @brief LaTeX tags to perform transformations from C syntax to LaTeX
      */
     static std::unordered_map<std::string, std::string> tags;
 };
@@ -129,20 +130,20 @@ public:
     
     /**
      * @brief Set lexeme
-     * @param lexeme lexeme to set
+     * @param[in] lexeme lexeme to set
      */
     void set_lexeme(const std::string& lexeme);
     
     /**
      * @brief Set lexeme and it's position in an expression
-     * @param lexeme lexeme to set
-     * @param position lexeme's position in expression
+     * @param[in] lexeme lexeme to set
+     * @param[in] position lexeme's position in expression
      */
     void set_lexeme(const std::string& lexeme, int position);
     
     /**
      * @brief Set position in expression
-     * @param position lexeme's position in expression
+     * @param[in] position lexeme's position in expression
      */
     void set_position(int position);
     /**

@@ -4,6 +4,7 @@
  * @author Galarius
  * @copyright Copyright (c) 2017 galarius. All rights reserved.
  * @brief internalization
+ * @todo implement
  */
 
 #ifndef ctex_i18n_hpp
@@ -16,6 +17,7 @@
  */
 inline std::string operator "" _i18n(const char* str, size_t /*length*/)
 {
+    // placeholder
     std::string tr(str);
     return tr;
 }

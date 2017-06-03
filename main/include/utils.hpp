@@ -2,7 +2,8 @@
  * @file utils.hpp
  * @date 03.06.17
  * @author galarius
- * @copyright   Copyright © 2017 galarius. All rights reserved.
+ * @copyright Copyright © 2017 galarius. All rights reserved.
+ * @brief String helpers
  */
 
 #ifndef utils_hpp
@@ -11,24 +12,48 @@
 #include <string>
 #include <vector>
 
-inline bool starts_with(const std::string& s, const std::string& prefix)
+/**
+ Checks if string starts with provided prefix
+
+ @param[in] str string to check
+ @param[in] prefix prefix to test at the beginning of the str
+ @return true if str starts with prefix
+ */
+inline bool starts_with(const std::string& str, const std::string& prefix)
 {
-    return (s.size() >= prefix.size()) &&
-    equal(prefix.begin(), prefix.end(), s.begin());
+    return (str.size() >= prefix.size()) &&
+    equal(prefix.begin(), prefix.end(), str.begin());
 }
-
-inline bool ends_with(const std::string& s, const std::string& suffix) {
-    
-    return (s.size() >= suffix.size()) &&
-    equal(suffix.rbegin(), suffix.rend(), s.rbegin());
-    
-}
-
-inline bool find(const std::string& a, const std::string& b)
+/**
+ Checks if string ends with provided suffix
+ 
+ @param[in] str string to check
+ @param[in] suffix suffix to test at the end of the str
+ @return true if str ends with suffix
+ */
+inline bool ends_with(const std::string& str, const std::string& suffix)
 {
-    return a.find(b) != std::string::npos;
+    return (str.size() >= suffix.size()) &&
+    equal(suffix.rbegin(), suffix.rend(), str.rbegin());
 }
+/**
+ Shortcut for the string's find method
 
+ @param str container string
+ @param pattern pattern to test
+ @return true if pattern occured in str
+ */
+inline bool find(const std::string& str, const std::string& pattern)
+{
+    return str.find(pattern) != std::string::npos;
+}
+/**
+ Split text into tokens
+
+ @param text text to split
+ @param sep separator
+ @return tokens
+ */
 inline std::vector<std::string> split(const std::string &text, std::string sep)
 {
     std::vector<std::string> tokens;
@@ -40,6 +65,5 @@ inline std::vector<std::string> split(const std::string &text, std::string sep)
     tokens.push_back(text.substr(start));
     return tokens;
 }
-
 
 #endif /* utils_hpp */

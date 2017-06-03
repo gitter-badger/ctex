@@ -11,8 +11,8 @@
 #include <algorithm>
 
 LexemeTree::LexemeTree()
-: root_(nullptr)
-, depth_(0)
+: depth_(0),
+  root_(nullptr)
 {  }
 
 std::string LexemeTree::transform()
@@ -33,7 +33,7 @@ void LexemeTree::insert(const Lexeme& lex)
     }
 }
 
-void LexemeTree::save_bracket_pos(const Lexeme& lexeme)
+void LexemeTree::save_parenthesis_pos(const Lexeme& lexeme)
 {
     if(lexeme.type() == LexemeLibrary::bracketl)
     {

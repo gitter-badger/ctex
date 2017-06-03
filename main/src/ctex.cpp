@@ -2,7 +2,7 @@
  * @file ctex.cpp
  * @date 03.06.17
  * @author galarius
- * @copyright   Copyright © 2017 galarius. All rights reserved.
+ * @copyright Copyright © 2017 galarius. All rights reserved.
  * @brief Formla parser and converter from C language into LaTeX
  */
 
@@ -150,12 +150,12 @@ std::string CTex::translate(const std::vector<std::string>& tokens)
         {
             if (l.type() == LexemeLibrary::bracketl) {
                 ++level;
-                tr.save_bracket_pos(l);
+                tr.save_parenthesis_pos(l);
                 break;
             }
             if (l.type() == LexemeLibrary::bracketr) {
                 --level;
-                tr.save_bracket_pos(l);
+                tr.save_parenthesis_pos(l);
                 break;
             }
                 

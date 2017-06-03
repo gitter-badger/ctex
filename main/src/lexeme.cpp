@@ -416,7 +416,6 @@ lexeme_(lexeme)
 , type_(LexemeLibrary::get_type(lexeme))
 { }
 
-
 void Lexeme::set_lexeme(const std::string& lexeme)
 {
     this->lexeme_ = lexeme_;
@@ -434,7 +433,6 @@ void Lexeme::set_position(int position)
 {
     this->position_ = position;
 }
-
 std::string Lexeme::lexeme() const
 {
     return this->lexeme_;
@@ -451,13 +449,11 @@ int Lexeme::pos() const
 {
     return this->position_;
 }
-
 void Lexeme::update_priority(int level)
 {
     int base_priority = LexemeLibrary::get_priority(this->lexeme());
     this->priority_ = base_priority - (level * LexemeLibrary::max_priority + 1);
 }
-
 bool Lexeme::operator< (const Lexeme& lex) const {
     return (priority_ < lex.priority_) || (priority_ == lex.priority_ && position_ > lex.position_);
 }
