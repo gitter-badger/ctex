@@ -1,0 +1,113 @@
+<!doctype html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/ctex/static/css/style.css">
+  <link rel="stylesheet" href="/ctex/static/css/gh-fork-ribbon.css" /> 
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="/ctex/static/css/gh-fork-ribbon.ie.css" />
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title> CTex </title>
+</head>
+
+<body>
+  <a class="github-fork-ribbon right-top" href="https://github.com/galarius/ctex.git" title="Fork me on GitHub">Fork me on GitHub</a>
+  <div class="container">
+    <div class="content" role="main">
+      
+<div id="container">
+    <div class="inner">
+        <header>
+            <h1>CTex</h1>
+            <h2>
+                <p>Generate <code>LaTeX</code> math equations from <code>C</code> source code</p>
+            </h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            <a href="https://github.com/galarius/ctex.git" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+        <hr>
+        <section id="main_content">
+            <p><code>CTex</code> is the tool to simplify documentation generation for source code with a lot of math expressions.  </p>
+<p><code>CTex</code> can help you in the following ways:  </p>
+<ul>
+<li>Quickly generates <code>LaTeX</code> equations for huge amount of math expressions in a source code.  </li>
+<li>Helps with representation of math formula in <code>LaTeX</code> format if you don't familiar with syntax.</li>
+<li>Generates <code>Doxygen</code>-friendly output</li>
+</ul>
+<p><code>CTex</code> is developed under macOS, but is set-up to be highly portable. As a result, it runs on Windows and  on a variety of Unix flavors as well.</p>
+            <h2 id="installation">Installation</h2>
+            <p>The latest version of <code>CTex</code> can be found on <img alt="github" src="static/images/octocat-icon.png" /><a href="https://github.com/galarius/ctex.git">GitHub</a></p>
+<p>If you have GIT installed, you should do the following to get the initial copy of the repository:</p>
+<pre><code>git clone https://github.com/galarius/ctex.git
+cd ctex
+</code></pre>
+<p>After that you can use</p>
+<pre><code>mkdir build  
+cd build
+cmake -G "Unix Makefiles" ..
+make
+</code></pre>
+<p>To force a fresh build after an earlier check-out simple remove the build directory and redo the steps above.
+After the binary has been built, you can use</p>
+<pre><code>make install
+</code></pre>
+<p>to install it.</p>
+            <h2 id="usage">Usage</h2>
+            <p>Two modes are available:  </p>
+<ul>
+<li>
+<p><code>ctex &lt;input.c&gt; &lt;output.c&gt;</code>  </p>
+</li>
+<li>
+<p><code>ctex -i</code> - interactive mode</p>
+</li>
+</ul>
+            <h2 id="configuration">Contributing</h2>
+            <p>There are plenty of possible improvements (<a href="https://github.com/galarius/ctex/issues">Check for open issues</a>):</p>
+<ul>
+<li>
+<p>Expansion of support for <code>LaTeX</code> syntax.  </p>
+</li>
+<li>
+<p>Generation of prettier output.  </p>
+</li>
+<li>
+<p>Test coverage.  </p>
+</li>
+</ul>
+<p>Here's a quick guide on <code>pull requests</code>:</p>
+<ol>
+<li><a href="https://github.com/galarius/ctex/issues">Check for open issues</a>, or
+   open a fresh issue to start a discussion around a feature idea or a bug.
+   Opening a separate issue to discuss the change is less important for smaller
+   changes, as the discussion can be done in the pull request.  </li>
+<li><a href="https://github.com/galarius/ctex.git">Fork</a> this repository on GitHub, and start making your changes.</li>
+<li>Check out the README for information about the project setup and usage.</li>
+<li>Push the change (it's recommended to use a separate branch for your feature).</li>
+<li>Open a pull request.</li>
+<li>I will try to merge and deploy changes as soon as possible, or at least leave
+   some feedback, but if you haven't heard back from me after a couple of days,
+   feel free to leave a comment on the pull request.</li>
+</ol>
+            <h2 id="configuration">Documentation</h2>
+            <p>See <a href="static/doc/index.html">Documnetation</a></p>
+            <h2 id="license">CTex License</h2>
+            <p>Copyright (c) 2017 by Shoshin Ilya.
+Permission to use, copy, modify, and distribute this software and its documentation under the terms of the GNU General Public License is hereby granted. No representations are made about the suitability of this software for any purpose. It is provided "as is" without express or implied warranty. See the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a> for more details.</p>
+        </section>
+        <footer>
+            CTex is maintained by <a href="https://github.com/galarius">galarius</a>
+        </footer>
+    </div>
+</div>
+
+    </div>
+  </div>
+  <!-- end container -->
+  <script src="/ctex/static/js/script.js"></script>
+</body>
+
+</html>

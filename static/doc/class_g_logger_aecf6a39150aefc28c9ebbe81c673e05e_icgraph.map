@@ -1,0 +1,10 @@
+<map id="GLogger::logError" name="GLogger::logError">
+<area shape="rect" id="node2" href="$class_c_tex.html#ac9810e41ad2dcb0ad75a389ca6c695bd" title="Devide text in tokens. " alt="" coords="223,5,377,31"/>
+<area shape="rect" id="node4" href="$class_lexeme_library.html#a5a9b2ab6e8ade1c51a13a3c97dbaa9a5" title="Apply transformation. " alt="" coords="225,55,374,93"/>
+<area shape="rect" id="node6" href="$class_lexeme_tree.html#a9a570a79aff68987b34f9f88cc75bbe4" title="Save parenthesis position. " alt="" coords="181,117,418,143"/>
+<area shape="rect" id="node9" href="$class_lexeme_tree.html#aa9eceea309b9006c49ffd81cbd39fb0a" title="Recursive display. " alt="" coords="227,167,372,192"/>
+<area shape="rect" id="node3" href="$class_c_tex.html#a8991fa5b82fbff08e47d02ff01c1e703" title="Convert C formula to LaTeX. " alt="" coords="492,5,602,31"/>
+<area shape="rect" id="node5" href="$class_lexeme_tree.html#a08a0bcfd71628baa34647d98eeed48e8" title="Recursive transformation. " alt="" coords="467,61,627,87"/>
+<area shape="rect" id="node7" href="$struct_lexeme_tree_1_1_tree_node.html#ab9f139d5242e19dc766e0948351ad8fd" title="LexemeTree::TreeNode\l::TreeNode" alt="" coords="466,111,628,149"/>
+<area shape="rect" id="node8" href="$class_c_tex.html#a0e149727fcf26dede7fd95333b577704" title="Analyze tokens and convert formulas to LaTeX format. " alt="" coords="492,173,602,199"/>
+</map>

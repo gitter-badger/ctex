@@ -1,0 +1,28 @@
+<map id="CTex::translate" name="CTex::translate">
+<area shape="rect" id="node2" href="$class_lexeme.html#ae759cd630d331ca5523df94bc691aa96" title="Get lexeme&#39;s type. " alt="" coords="466,14,568,39"/>
+<area shape="rect" id="node3" href="$class_lexeme_tree.html#a9a570a79aff68987b34f9f88cc75bbe4" title="Save parenthesis position. " alt="" coords="164,70,400,95"/>
+<area shape="rect" id="node5" href="$class_g_logger.html#aba5c149d4ef5bc3245b7df6c7a80a298" title="Get single instance of GLogger. " alt="" coords="452,162,582,187"/>
+<area shape="rect" id="node17" href="$class_lexeme_library.html#a5ee6add4ab51934a45ad5f667fd8d271" title="Checks whether type considered to be a transform operator. " alt="" coords="188,171,376,196"/>
+<area shape="rect" id="node18" href="$class_lexeme.html#a33c29f405af5e12f3841839a800d6941" title="Update lexeme&#39;s priority. " alt="" coords="200,220,364,246"/>
+<area shape="rect" id="node21" href="$class_lexeme.html#abd7ce97ec36f1d86e7f315cb0105dc0d" title="Get Lexeme&#39;s priority. " alt="" coords="224,270,340,295"/>
+<area shape="rect" id="node22" href="$class_g_logger.html#ab877fe0a647c962a2e6c806b17b4cb14" title="Logging with trace level. " alt="" coords="451,323,583,348"/>
+<area shape="rect" id="node23" href="$class_lexeme_tree.html#a75cb1d68feced037416a9b419e2d0257" title="Insert lexeme into tree. " alt="" coords="214,371,350,396"/>
+<area shape="rect" id="node24" href="$class_lexeme_tree.html#a32335bf2e71ddf36af4f88ff282c0544" title="Print list of nodes properties. " alt="" coords="212,420,352,446"/>
+<area shape="rect" id="node25" href="$class_g_logger.html#a433d8fb9363efe33f0333ce049816fb7" title="Logging with debug level. " alt="" coords="448,420,586,446"/>
+<area shape="rect" id="node26" href="$class_lexeme_tree.html#adfca27cc56434cb8af2fee439fff285f" title="Display tree. " alt="" coords="210,522,354,547"/>
+<area shape="rect" id="node27" href="$class_lexeme_tree.html#ae7caa9d4b7479655e0ac72efb816b254" title="Perform transformation. " alt="" coords="202,571,362,596"/>
+<area shape="rect" id="node4" href="$class_lexeme.html#a22e3a10e1cd8b3e3aa0e4a70120eb0f8" title="Get lexeme&#39;s position in expression. " alt="" coords="468,63,566,88"/>
+<area shape="rect" id="node6" href="$class_g_logger.html#aecf6a39150aefc28c9ebbe81c673e05e" title="Logging with error level. " alt="" coords="453,112,581,138"/>
+<area shape="rect" id="node7" href="$class_g_logger.html#ac4620332056e22ae0c910b4dfa56bf88" title="Inner logging method to perform console/file output. " alt="" coords="634,323,769,348"/>
+<area shape="rect" id="node8" href="$class_g_logger.html#a0d796841d8ea54e2f749145985fef29f" title="unpacks the last argument of variadic template arguments sequence " alt="" coords="833,112,957,138"/>
+<area shape="rect" id="node9" href="$class_g_logger.html#a794dc104bc476c85465ec229a598720c" title="Write constructed message to file or stdout/stderr. " alt="" coords="828,162,962,200"/>
+<area shape="rect" id="node10" href="$class_g_logger.html#a35a86fbfd4375b8ed97a42fc00cfa18a" title="Get string name from Level. " alt="" coords="820,224,969,250"/>
+<area shape="rect" id="node11" href="$class_g_logger.html#afe03431e6c48ee5ccd80e5a0fe5eb513" title="Copy file from one location to another. " alt="" coords="828,274,961,299"/>
+<area shape="rect" id="node12" href="$class_g_logger.html#a944ac6b22b4122ae7eb5c8a0f3e7fa43" title="Get file size. " alt="" coords="830,323,959,348"/>
+<area shape="rect" id="node13" href="$class_g_logger.html#aefeb6a4305827d989dcbb0c8314dbd74" title="Checks whether file exists. " alt="" coords="837,372,952,398"/>
+<area shape="rect" id="node14" href="$class_g_logger.html#a5847885b8992923f334089a4dce611dc" title="Current time as string. " alt="" coords="817,422,972,447"/>
+<area shape="rect" id="node15" href="$class_g_logger.html#a1b76f2bded6b942f1af8afe0cd42180d" title="Remove leading and trailing spaces. " alt="" coords="843,471,946,496"/>
+<area shape="rect" id="node16" href="$class_g_logger.html#a46789513bfde9d2731c616956354fd0c" title="Get path basename. " alt="" coords="823,520,966,546"/>
+<area shape="rect" id="node19" href="$class_lexeme_library.html#a0bf5dfa4ef9ea44c8dfe22384b805381" title="Get lexeme&#39;s priority. " alt="" coords="449,211,585,250"/>
+<area shape="rect" id="node20" href="$class_lexeme.html#a9065d258863b67a22af159806e59b7b3" title="Get lexeme as string. " alt="" coords="457,274,577,299"/>
+</map>

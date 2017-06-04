@@ -1,0 +1,5 @@
+<map id="LexemeTree::insert" name="LexemeTree::insert">
+<area shape="rect" id="node2" href="$struct_lexeme_tree_1_1_tree_node.html#ab9f139d5242e19dc766e0948351ad8fd" title="LexemeTree::TreeNode\l::TreeNode" alt="" coords="189,5,351,44"/>
+<area shape="rect" id="node3" href="$class_c_tex.html#a0e149727fcf26dede7fd95333b577704" title="Analyze tokens and convert formulas to LaTeX format. " alt="" coords="215,68,325,93"/>
+<area shape="rect" id="node4" href="$class_lexeme_tree.html#a66fae2969081f7244212b90aa639b337" title="Recursive insert. " alt="" coords="202,117,338,143"/>
+</map>

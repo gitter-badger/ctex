@@ -1,0 +1,2 @@
+Copyright (c) 2017 by Shoshin Ilya.
+Permission to use, copy, modify, and distribute this software and its documentation under the terms of the GNU General Public License is hereby granted. No representations are made about the suitability of this software for any purpose. It is provided "as is" without express or implied warranty. See the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) for more details.

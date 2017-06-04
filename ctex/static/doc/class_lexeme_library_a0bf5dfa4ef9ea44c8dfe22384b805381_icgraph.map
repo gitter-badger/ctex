@@ -1,0 +1,5 @@
+<map id="LexemeLibrary::get_priority" name="LexemeLibrary::get_priority">
+<area shape="rect" id="node2" href="$class_lexeme.html#aacd77ee6473a6f8631f3878628514229" title="Set lexeme. " alt="" coords="199,5,343,31"/>
+<area shape="rect" id="node3" href="$class_lexeme.html#a33c29f405af5e12f3841839a800d6941" title="Update lexeme&#39;s priority. " alt="" coords="189,55,353,80"/>
+<area shape="rect" id="node4" href="$class_c_tex.html#a0e149727fcf26dede7fd95333b577704" title="Analyze tokens and convert formulas to LaTeX format. " alt="" coords="401,55,511,80"/>
+</map>

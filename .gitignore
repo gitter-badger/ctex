@@ -1,0 +1,4 @@
+*.pyc
+flask
+.vscode
+*.pyc

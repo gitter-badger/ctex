@@ -1,0 +1,4 @@
+<map id="GLogger::start_record" name="GLogger::start_record">
+<area shape="rect" id="node2" href="$class_detector.html#a24c56284ce045c6e6cb8143076075a59" title="Process detected formula, apply filter, write to stream. " alt="" coords="205,5,331,31"/>
+<area shape="rect" id="node3" href="$class_detector.html#ac1b6beae1ca250bd975d8aedb6eb4ec7" title="Parse file stream with C code to detect convertable formulas and write them to output stream..." alt="" coords="379,5,504,31"/>
+</map>

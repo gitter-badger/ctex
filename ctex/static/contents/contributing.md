@@ -1,0 +1,21 @@
+There are plenty of possible improvements ([Check for open issues](https://github.com/galarius/ctex/issues)):
+
+* Expansion of support for `LaTeX` syntax.  
+
+* Generation of prettier output.  
+
+* Test coverage.  
+
+Here's a quick guide on `pull requests`:
+
+1. [Check for open issues](https://github.com/galarius/ctex/issues), or
+   open a fresh issue to start a discussion around a feature idea or a bug.
+   Opening a separate issue to discuss the change is less important for smaller
+   changes, as the discussion can be done in the pull request.  
+2. [Fork](https://github.com/galarius/ctex.git) this repository on GitHub, and start making your changes.
+3. Check out the README for information about the project setup and usage.
+3. Push the change (it's recommended to use a separate branch for your feature).
+4. Open a pull request.
+5. I will try to merge and deploy changes as soon as possible, or at least leave
+   some feedback, but if you haven't heard back from me after a couple of days,
+   feel free to leave a comment on the pull request.

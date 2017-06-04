@@ -1,0 +1,6 @@
+<map id="GLogger::logDebug" name="GLogger::logDebug">
+<area shape="rect" id="node2" href="$class_c_tex.html#a7f18797ac99e4fb8f8609afe981f292b" title="CTex::CTex" alt="" coords="223,5,313,31"/>
+<area shape="rect" id="node3" href="$class_c_tex.html#a0e149727fcf26dede7fd95333b577704" title="Analyze tokens and convert formulas to LaTeX format. " alt="" coords="213,55,323,80"/>
+<area shape="rect" id="node4" href="$class_c_tex.html#ac9810e41ad2dcb0ad75a389ca6c695bd" title="Devide text in tokens. " alt="" coords="191,104,345,129"/>
+<area shape="rect" id="node5" href="$class_c_tex.html#a8991fa5b82fbff08e47d02ff01c1e703" title="Convert C formula to LaTeX. " alt="" coords="393,104,503,129"/>
+</map>

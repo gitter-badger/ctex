@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_g_logger.html#aba5c149d4ef5bc3245b7df6c7a80a298" title="Get single instance of GLogger. " alt="" coords="130,5,261,31"/>
+<area shape="rect" id="node3" href="$class_g_logger.html#aa1dd95d7af31764717ceca5347502648" title="Set output logger mode. " alt="" coords="104,55,287,80"/>
+<area shape="rect" id="node4" href="$class_g_logger.html#ae3ff2860909e75c1d4f768b5d883564b" title="Set min logger level for specified target to filter messages. " alt="" coords="114,104,276,129"/>
+<area shape="rect" id="node5" href="$class_g_logger.html#acf1eddb4cae7275b90ad3d68fe7917b9" title="Set log filename to begin file logging. " alt="" coords="105,153,286,179"/>
+<area shape="rect" id="node6" href="$class_lexeme_library.html#af1456db160d794ff9efba662e2c961f8" title="Add lexeme to library. " alt="" coords="126,203,265,241"/>
+<area shape="rect" id="node7" href="$class_c_tex.html#abab80d40f0ee81fb67e8bfaceab65796" title="Default regex, that contains C maths function library. " alt="" coords="125,265,265,291"/>
+<area shape="rect" id="node8" href="$class_lexeme_library.html#a72162cca93e124c52dc1dee4154631ec" title="Get lexemes of selected type. " alt="" coords="335,259,471,297"/>
+</map>

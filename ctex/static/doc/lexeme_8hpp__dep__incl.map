@@ -1,0 +1,10 @@
+<map id="main/include/lexeme.hpp" name="main/include/lexeme.hpp">
+<area shape="rect" id="node2" href="$ctex_8hpp.html" title="Formla parser and converter from C language into LaTeX. " alt="" coords="167,79,317,104"/>
+<area shape="rect" id="node7" href="$ltree_8hpp.html" title="Lexeme Tree. " alt="" coords="341,79,493,104"/>
+<area shape="rect" id="node9" href="$lexeme_8cpp.html" title="main/src/lexeme.cpp" alt="" coords="517,79,660,104"/>
+<area shape="rect" id="node3" href="$detector_8hpp.html" title="Detects math equations in source code. " alt="" coords="31,152,205,177"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="main/src/main.cpp" alt="" coords="177,225,307,251"/>
+<area shape="rect" id="node6" href="$ctex_8cpp.html" title="Formla parser and converter from C language into LaTeX. " alt="" coords="279,152,405,177"/>
+<area shape="rect" id="node4" href="$detector_8cpp.html" title="C formula detection in stream. " alt="" coords="5,225,153,251"/>
+<area shape="rect" id="node8" href="$ltree_8cpp.html" title="main/src/ltree.cpp" alt="" coords="428,152,555,177"/>
+</map>

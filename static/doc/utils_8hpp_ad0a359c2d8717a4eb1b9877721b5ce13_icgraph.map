@@ -1,0 +1,6 @@
+<map id="find" name="find">
+<area shape="rect" id="node2" href="$class_detector.html#ac1b6beae1ca250bd975d8aedb6eb4ec7" title="Parse file stream with C code to detect convertable formulas and write them to output stream..." alt="" coords="108,5,233,31"/>
+<area shape="rect" id="node3" href="$class_lexeme_library.html#abf673275cb6640846560d08587a3d71b" title="Apply default transform. " alt="" coords="96,55,245,93"/>
+<area shape="rect" id="node4" href="$class_lexeme_library.html#a5a9b2ab6e8ade1c51a13a3c97dbaa9a5" title="Apply transformation. " alt="" coords="293,25,442,64"/>
+<area shape="rect" id="node5" href="$class_lexeme_tree.html#a08a0bcfd71628baa34647d98eeed48e8" title="Recursive transformation. " alt="" coords="490,61,649,87"/>
+</map>

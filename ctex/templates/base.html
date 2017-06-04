@@ -1,0 +1,26 @@
+<!doctype html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/gh-fork-ribbon.css') }}" /> {% block css %}{% endblock %}
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/gh-fork-ribbon.ie.css') }}" />
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>{% block page_title %} CTex {% endblock %}</title>
+</head>
+
+<body>
+  <a class="github-fork-ribbon right-top" href="https://github.com/galarius/ctex.git" title="Fork me on GitHub">Fork me on GitHub</a>
+  <div class="{% block content_class %}container{% endblock content_class %}">
+    <div class="content" role="main">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+  <!-- end container -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

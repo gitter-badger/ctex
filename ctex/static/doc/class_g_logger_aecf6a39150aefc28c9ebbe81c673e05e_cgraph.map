@@ -1,0 +1,12 @@
+<map id="GLogger::logError" name="GLogger::logError">
+<area shape="rect" id="node2" href="$class_g_logger.html#ac4620332056e22ae0c910b4dfa56bf88" title="Inner logging method to perform console/file output. " alt="" coords="181,216,317,241"/>
+<area shape="rect" id="node3" href="$class_g_logger.html#a0d796841d8ea54e2f749145985fef29f" title="unpacks the last argument of variadic template arguments sequence " alt="" coords="380,5,504,31"/>
+<area shape="rect" id="node4" href="$class_g_logger.html#a794dc104bc476c85465ec229a598720c" title="Write constructed message to file or stdout/stderr. " alt="" coords="375,55,509,93"/>
+<area shape="rect" id="node5" href="$class_g_logger.html#a35a86fbfd4375b8ed97a42fc00cfa18a" title="Get string name from Level. " alt="" coords="368,117,517,143"/>
+<area shape="rect" id="node6" href="$class_g_logger.html#afe03431e6c48ee5ccd80e5a0fe5eb513" title="Copy file from one location to another. " alt="" coords="376,167,509,192"/>
+<area shape="rect" id="node7" href="$class_g_logger.html#a944ac6b22b4122ae7eb5c8a0f3e7fa43" title="Get file size. " alt="" coords="378,216,507,241"/>
+<area shape="rect" id="node8" href="$class_g_logger.html#aefeb6a4305827d989dcbb0c8314dbd74" title="Checks whether file exists. " alt="" coords="385,265,500,291"/>
+<area shape="rect" id="node9" href="$class_g_logger.html#a5847885b8992923f334089a4dce611dc" title="Current time as string. " alt="" coords="365,315,520,340"/>
+<area shape="rect" id="node10" href="$class_g_logger.html#a1b76f2bded6b942f1af8afe0cd42180d" title="Remove leading and trailing spaces. " alt="" coords="391,364,494,389"/>
+<area shape="rect" id="node11" href="$class_g_logger.html#a46789513bfde9d2731c616956354fd0c" title="Get path basename. " alt="" coords="371,413,514,439"/>
+</map>
