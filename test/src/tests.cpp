@@ -12,7 +12,7 @@ std::shared_ptr<CTex> ctex;
 std::string run(const std::string& cformula)
 {
     GLogger::instance().logInfo("in: ", cformula);
-    std::string latex_formula = ctex->translate(cformula);
+    std::string latex_formula = ctex->translate(cformula, CTex::DISPLAY);
     GLogger::instance().logInfo("out: ", latex_formula);
     GLogger::instance().logInfo("");
     return latex_formula;
@@ -39,6 +39,12 @@ TEST_CASE("handle frac" ) {
 TEST_CASE("handle sqrt" ) {
     REQUIRE(
         run("y = sqrt(x * x + y * y);").compare(R"!($$ y = \sqrt{x \cdot x + y \cdot y} $$)!") == 0
+    );
+}
+
+TEST_CASE("handle pow" ) {
+    REQUIRE(
+        run("y = pow(x, y);").compare(R"!($$ y = x^y $$)!") == 0
     );
 }
 

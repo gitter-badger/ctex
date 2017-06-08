@@ -7,6 +7,7 @@
 
 #include "ltree.hpp"
 #include "glogger.hpp"
+#include "processing.hpp"
 
 #include <algorithm>
 
@@ -90,18 +91,18 @@ std::string LexemeTree::transform(const std::unique_ptr<TreeNode> &node)
         
         if (!LexemeLibrary::is_toperator( lex.type() ))
         {
-            result = LexemeLibrary::apply_default_transform(lex.lexeme());
+            result = Processing::apply_default_transform(lex.lexeme());
             break;
         }
         
+        // check if expression should be wrapped in parenthesis
         bool in_parenthesis = node->left && lbrackets_pos_.find(node->left->data.pos()-1) != lbrackets_pos_.end() &&
         node->right && rbrackets_pos_.find(node->right->data.pos()+1) != rbrackets_pos_.end();
 
-        result = LexemeLibrary::apply_transform(
-                                                lex,
-                                                transform(node->left),
-                                                transform(node->right),
-                                                in_parenthesis);
+        result = Processing::apply_transform(lex,
+                                            transform(node->left),
+                                            transform(node->right),
+                                            in_parenthesis);
         
     } while (false);
     return result;

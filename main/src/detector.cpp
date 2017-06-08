@@ -89,20 +89,20 @@ void Detector::perform(std::ifstream& in, std::ofstream& out)
         
         if (!in_comment && !skip)
         {
-            if (find(line, "if") || find(line, "else"))
+            if (str::find(line, "if") || str::find(line, "else"))
             {
                 out << line << std::endl;
                 continue;
             }
             
-            if (find(line, "=") && !find(line, "for") && !find(line, "while"))
+            if (str::find(line, "=") && !str::find(line, "for") && !str::find(line, "while"))
             {
                 in_formula = true;
             }
             
             if (in_formula) {
                 formula.append(line);
-                if (find(formula, ";")) {
+                if (str::find(formula, ";")) {
                     process(formula, out);
                     out << formula << std::endl;
                     in_formula = false;

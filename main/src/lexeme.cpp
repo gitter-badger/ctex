@@ -234,19 +234,6 @@ std::vector<LexemeLibrary::LexData> LexemeLibrary::lex_library {
     { ",", { operation,  6 } },
 };
 
-std::unordered_map<std::string, std::string> LexemeLibrary::tags{
-    { "_", R"!({\_})!" },
-    { "/", R"!(\frac)!" },
-    { "*", R"!(\cdot)!" },
-    { ">=", R"!(\geq)!" },
-    { "<=", R"!(\leq)!" },
-    { "!=", R"!(\not=)!" },
-    { "[", R"!(_{\normalsize)!" },
-    { "]", R"!(})!" },
-    { "(", R"!(\left()!" },
-    { ")", R"!(\right))!" },
-};
-
 void LexemeLibrary::add_lexeme(const std::string& lex, Type type, int priority)
 {
     // add in the form: { lex, { type, priority } }
@@ -265,95 +252,6 @@ std::vector<std::string> LexemeLibrary::get_lexemes(Type type)
         }
     }
     return lexemes;
-}
-
-std::string LexemeLibrary::apply_transform(const Lexeme& toperator, const std::string& a, const std::string& b, bool in_parenthesis)
-{
-    const bool space_wrapping = true;
-    std::string space = space_wrapping ? " " : "";
-    //----------------------------------------------------
-    auto replace_op_with_tag = [&](const std::string& op, const std::string& a, const std::string& b) {
-        std::stringstream ss;
-        ss << a << space << tags[op] << space << b;
-        return ss.str();
-    };
-    //----------------------------------------------------
-    std::string result;
-    
-    switch(toperator.type())
-    {
-        case LexemeLibrary::operation:
-            if (toperator.lexeme() == "/")
-            {
-                std::stringstream ss;
-                ss << tags["/"] << "{" << a << "}" << "{" << b << "}";
-                result = ss.str();
-            }
-            else if (tags.find(toperator.lexeme()) != tags.end())
-            {
-                result = replace_op_with_tag(toperator.lexeme(), a, b);
-            }
-            else
-            {
-                result = a + apply_default_transform(space + toperator.lexeme() + space) + b;
-            }
-            
-            if(in_parenthesis)
-            {
-                result = tags["("] + space + result + space + tags[")"];
-            }
-            break;
-        case LexemeLibrary::function:
-    
-            if (toperator.lexeme() == "sqrt")
-            {
-                result = R"!(\sqrt{)!" + (b.empty() ? a : b) + "}";
-            }
-            else
-            {
-                std::string x = b.empty() ? a : b;
-                
-                if(!starts_with(x, tags["("]) && !ends_with(x, tags[")"]))
-                {
-                    result = toperator.lexeme() + space + tags["("] +  x + tags[")"];
-                }
-                else
-                {
-                    result = toperator.lexeme() + space + x;
-                }
-            }
-            break;
-        case LexemeLibrary::index:
-            result = replace_op_with_tag(toperator.lexeme(), a, b);
-            break;
-        default:
-            GLogger::instance().logError("Unsupported type:", toperator.type(), " of lexeme:", toperator.lexeme());
-            break;
-    }
-    
-    
-    return result;
-}
-
-std::string LexemeLibrary::apply_default_transform(const std::string& lex)
-{
-    std::stringstream ss;
-    std::string ret = lex;
-    if ( find(lex, "_") )
-    {
-        auto parts = split(lex, "_");
-        for (auto s : parts)
-        {
-            ss << s << tags["_"];
-        }
-        ret = ss.str();
-        for (int i = 0; i < tags["_"].length(); ++i)
-        {
-            ret.pop_back();
-        }
-        
-    }
-    return ret;
 }
 
 bool LexemeLibrary::is_supported(const std::string& lex)
