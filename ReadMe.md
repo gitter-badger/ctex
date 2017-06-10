@@ -1,5 +1,7 @@
 # CTex  
 
+[![Join the chat at https://gitter.im/g-ctex/Lobby](https://badges.gitter.im/g-ctex/Lobby.svg)](https://gitter.im/g-ctex/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Generate `LaTeX` math equations from `C` source code.
 
 `CTex` is the tool to simplify documentation generation for source code with a lot of math expressions.  
